@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinador de Digitação - Artes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Treinador de Digitação</h1>
+      <a
+        href="menu.html"
+        style="
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          padding: 10px 22px;
+          background-color: #da1414;
+          color: #fff;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 1.1rem;
+          font-weight: bold;
+          box-shadow: 0 2px 8px #0002;
+          z-index: 10;
+        "
+        >Menu</a
+      >
+      <div id="typing-area"></div>
+      <textarea
+        id="text-input"
+        rows="6"
+        placeholder="Digite o texto aqui..."
+      ></textarea>
+      <button id="finalizar-btn">Finalizar</button>
+      <div id="timer"></div>
+      <div id="alerta"></div>
+      <div id="resultados" style="display: none"></div>
+      <button id="next-btn" style="display: none; margin-top: 20px">
+        Próximo Texto
+      </button>
+      <div id="text-display"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinador de Digitação - Artes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a
+        href="index.html"
+        style="
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          padding: 10px 22px;
+          background-color: #da1414;
+          color: #fff;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 1.1rem;
+          font-weight: bold;
+          box-shadow: 0 2px 8px #0002;
+          z-index: 10;
+        "
+        >Início</a
+      >
+    <div class="container">
+      <h1>Treinador de Digitação</h1>
+      <form
+        id="inicio-form"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        "
+      >
+        <label for="dificuldade" style="font-size: 1.3rem; color: #909090;"
+          >Selecione a dificuldade:</label
+        >
+        <select
+          id="dificuldade"
+          name="dificuldade"
+          style="font-size: 1.1rem; padding: 8px 16px; border-radius: 6px"
+        >
+          <option value="facil">Fácil</option>
+          <option value="medio">Médio</option>
+          <option value="dificil">Difícil</option>
+        </select>
+        <button type="submit">
+          Iniciar Jogo
+        </button>
+      </form>
+      <div
+        style="
+          margin-top: 30px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <div
+          style="
+            text-align: left;
+            font-size: 1.1rem;
+            color: #222;
+            background: #f7f7f7;
+            padding: 18px 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+            min-width: 320px;
+            max-width: 500px;
+            width: 100%;
+          "
+        >
+          <b>Ranking por desempenho:</b>
+          <p style="margin: 8px 0">
+            Menos de 100 teclas por minuto:
+            <span style="color: #888; font-weight: bold">Ferro</span>
+          </p>
+          <p style="margin: 8px 0">
+            100 a 159 teclas por minuto:
+            <span style="color: #cd7f32; font-weight: bold">Bronze</span>
+          </p>
+          <p style="margin: 8px 0">
+            160 a 219 teclas por minuto:
+            <span style="color: #ffd700; font-weight: bold">Ouro</span>
+          </p>
+          <p style="margin: 8px 0">
+            220 a 269 teclas por minuto:
+            <span style="color: #4dd0e1; font-weight: bold">Platina</span>
+          </p>
+          <p style="margin: 8px 0">
+            270 a 319 teclas por minuto:
+            <span style="color: #50c878; font-weight: bold">Esmeralda</span>
+          </p>
+          <p style="margin: 8px 0">
+            320 a 399 teclas por minuto:
+            <span style="color: #b9f2ff; font-weight: bold">Diamante</span>
+          </p>
+          <p style="margin: 8px 0">
+            400 ou mais teclas por minuto:
+            <span style="color: #7c4dff; font-weight: bold">Mestre</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("inicio-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const dificuldade = document.getElementById("dificuldade").value;
+          window.location.href = `game.html?dificuldade=${dificuldade}`;
+        });
+    </script>
+  </body>
+</html>

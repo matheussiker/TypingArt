@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/typer.css">
+</head>
+<body>
+    <a
+        href="index.html"
+        style="
+          position: absolute;
+          left: 30px;
+          top: 30px;
+          padding: 10px 22px;
+          background-color: #da1414;
+          color: #fff;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 1.1rem;
+          font-weight: bold;
+          box-shadow: 0 2px 8px #0002;
+          z-index: 10;
+        "
+        >Início</a
+      >
+    <div class="title">
+        <h2>TYPING.ART</h2>
+    </div>
+  
+    <div id="settings" class="settings">
+        <form id="settings-form">
+            <div>
+                <label for="dificuldade">Dificuldade:</label>
+                <select id="dificuldade">
+                <option value="facil">Facil</option>
+                <option value="medio">Medio</option>
+                <option value="dificil">Dificil</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Tema: <span>Artes</span></h2>
+        <small>Digite a palavra:</small>
+  
+        <h1 id="word"></h1>
+  
+        <input type="text" id="text" autocomplete="off" placeholder="Digite a palavra aqui..." autofocus/>
+
+        <p class="Tempo">Tempo Restante: <span id="time">10s</span></p>
+
+        <p class="Pontos">Pontos: <span id="score">0</span></p>
+
+        <div id="end-game-container" class="end-game"></div>
+    </div>
+  
+    <script src="js/typer.js"></script>
+
+    <footer>
+        <p>&copy; 2025 TYPING.ART, Desenvolvido por Matheus Siqueira, Heitor Munbak e Richard Flores.</p>
+    </footer>
+</body>
+</html>
